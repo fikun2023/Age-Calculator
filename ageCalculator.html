@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="./ageCalculator.css">
+  <script src="./index.js"></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <title>Frontend Mentor | Age calculator app</title>
+</head>
+<body>
+ <div class="main-container">
+<div class="secondary-container">
+  <form action="">
+    <div class="input">
+      <label for="day">day</label>
+      <input type="text" name="day" id="day" placeholder="dd" required>
+      <label  id="errorday"for="day"></label>
+    </div>
+    
+    <div class="input">
+      <label for="month">month</label>
+      <input type="text" name="month" id="month" placeholder="mm"required>
+      <label  id="errormonth"for="month"> </label>
+    </div>
+
+    <div class="input">
+      <label for="year">year</label>
+      <input type="text" name="year" id="year" placeholder="yyyy"required>
+      <label  id="erroryear"for="year"></label>    
+    </div>
+  </form>
+
+<div class="button">
+  <div class="line">
+    <hr>
+  </div>
+  <div id="icon">
+    <span  id="submit" style="color: aliceblue;width:46;height: 47 ;" class="material-symbols-outlined">
+      arrow_downward
+      </span>
+  </div>
+  
+  
+</div>
+
+<div class="text">
+  <div class="innertext">
+    <h1><span id="yearSpan"><i>--</i></span>year</h1>
+  </div>
+  <div class="innertext">
+    <h1><span id="monthSpan"><i>--</i></span>month</h1>
+  </div>
+  <div class="innertext">
+    <h1><span id="daySpan"><i>--</i></span>day</h1>
+  </div>
+</div>
+
+</div>
+ </div>
+</body>
+<script src="./ageCalculator.js"></script>
+</html>
